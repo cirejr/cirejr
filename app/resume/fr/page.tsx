@@ -17,7 +17,7 @@ export default function ResumeFr() {
         </div>
       </header>
       <main className='grid grid-cols-1 sm:grid-cols-3 gap-8'>
-        <section className='md:col-span-2'>
+        <section className='sm:col-span-2'>
           <h2 className='text-2xl font-bold text-blue-600 mb-4'>
             Expérience Professionnelle
           </h2>
