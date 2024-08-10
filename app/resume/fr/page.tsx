@@ -1,7 +1,7 @@
 export default function ResumeFr() {
   return (
-    <div className='max-w-5xl mx-auto p-8 text-sm'>
-      <header className='grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8 container'>
+    <div className='container max-w-5xl mx-auto p-8 text-sm'>
+      <header className='grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8 '>
         <div className='sm:col-span-2'>
           <h1 className='text-6xl font-bold text-blue-600'>Ciré Jr Ba</h1>
           <p className='mt-2'>

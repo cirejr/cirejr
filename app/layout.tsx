@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import SideMenu from "@/components/global/side-menu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn("font-geist-sans", GeistSans.className)}>
-        {children}
+      <body
+        className={cn(
+          "font-geist-sans container bg-slate-900 dark",
+          GeistSans.className,
+        )}
+      >
+        <div className='lg:px-24 mx-auto flex flex-col md:flex-row gap-4 w-full h-full pt-24 '>
+          <SideMenu />
+          {children}
+        </div>
       </body>
     </html>
   );
