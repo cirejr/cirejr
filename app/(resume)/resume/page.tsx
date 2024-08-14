@@ -1,9 +1,13 @@
+import Link from "next/link";
+
 export default function ResumeFr() {
   return (
     <div className='max-w-5xl mx-auto p-8 text-sm'>
       <header className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-8'>
         <div className='md:col-span-2'>
-          <h1 className='text-4xl font-bold text-blue-600'>Ciré Jr Ba</h1>
+          <Link href='/' className='text-4xl font-bold text-blue-600'>
+            Ciré Jr Ba
+          </Link>
           <p className='text-lg mt-2'>
             Experienced IT Consultant and Front-End Developer specializing in
             web and mobile application development

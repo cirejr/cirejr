@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useActiveSection } from "@/lib/use-active-section"; // You'll need to create this hook
+import AnimatedBackground from "../ui/animated-background";
+import { Button } from "../ui/button";
 
 export default function SideMenu() {
   const sections = ["about", "skills", "projects", "contact"];
@@ -10,13 +12,16 @@ export default function SideMenu() {
   return (
     <aside className='lg:sticky h-full lg:w-1/2'>
       <div className='space-y-2'>
-        <h1 className='text-4xl font-extrabold tracking-tight '>
+        <Link
+          href='/'
+          className='text-4xl font-extrabold tracking-tight text-white'
+        >
           Cire Junior Ba
-        </h1>
+        </Link>
         <h3 className='text-xl font-semibold tracking-tight text-[#6e64ff]'>
           Creative Developer
         </h3>
-        <p className='leading-7'>
+        <p className='leading-7 text-foreground'>
           I <span className='line-through'>build</span>
           <span className='font-semibold text-lg text-[#6e64ff]'>
             {" "}
@@ -25,7 +30,7 @@ export default function SideMenu() {
           ideas into beautiful apps
         </p>
       </div>
-      <nav className='mt-16'>
+      {/* <nav className='mt-16'>
         <ul className='text-lg space-y-4'>
           {sections.map((section) => (
             <li key={section}>
@@ -43,7 +48,30 @@ export default function SideMenu() {
             </li>
           ))}
         </ul>
-      </nav>
+      </nav> */}
+      <div className='flex flex-col gap-2 max-w-fit mt-16'>
+        <AnimatedBackground
+          defaultValue={sections[0]}
+          className='rounded-lg bg-slate-100 dark:bg-slate-800'
+          transition={{
+            type: "spring",
+            bounce: 0.2,
+            duration: 0.3,
+          }}
+          enableHover
+        >
+          {sections.map((tab, index) => (
+            <Link
+              href={`#${tab}`}
+              key={index}
+              data-id={index}
+              className='px-2 py-0.5 text-slate-600 hover:pl-5 transition-colors duration-300 data-[checked=true]:text-blue-950 hover:text-slate-950 dark:text-slate-400 dark:hover:text-slate-50 capitalize text-lg'
+            >
+              {tab}
+            </Link>
+          ))}
+        </AnimatedBackground>
+      </div>
     </aside>
   );
 }
