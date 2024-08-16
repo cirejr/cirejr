@@ -66,4 +66,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .neumorphism {
+    border-radius: 20px;
+    background: #16162c;
+    box-shadow: 35px 35px 47px #0a0a14, -35px -35px 47px #222244;
+  }
 }
