@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ResumeFr() {
   return (
     <div className="container mx-auto max-w-5xl p-8 text-sm">
-      <header className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+      <header className="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
         <div className="md:col-span-2">
           <h1 className="text-6xl font-bold text-blue-600">Ciré Jr Ba</h1>
           <p className="mt-2">
@@ -19,7 +19,7 @@ export default function ResumeFr() {
           <p>x.com/cirejr_</p>
         </div>
       </header>
-      <main className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <main className="grid grid-cols-1 gap-8 sm:grid-cols-3">
         <section className="md:col-span-2">
           <h2 className="mb-4 text-2xl font-bold text-blue-600">
             Professional Experience
