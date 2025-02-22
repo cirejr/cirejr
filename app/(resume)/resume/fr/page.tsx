@@ -13,18 +13,9 @@ export default function ResumeFr() {
           <p>juniorcireba@gmail.com</p>
           <p>(+221) 77 842 73 00</p>
 
-          <a target="_blank" href="https://www.github.com/cirejr">
-            github.com/cirejr
-          </a>
-          <br />
-          <a target="_blank" href="https://www.linkedin.com/in/ba-ciré-junior">
-            linkedin.com/in/ba-ciré-junior
-          </a>
-
-          <br />
-          <a href="https://x.com/cirejr_" target="_blank">
-            x.com/cirejr_
-          </a>
+          <p>github.com/cirejr</p>
+          <p>linkedin.com/in/ba-ciré-junior</p>
+          <p>x.com/cirejr_</p>
         </div>
       </header>
       <main className="grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -159,6 +150,31 @@ export default function ResumeFr() {
               </li>
             </ul>
           </div>
+
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-blue-600">Éducation</h2>
+            <h3 className="text-lg font-semibold">
+              Université Cheikh Anta Diop
+            </h3>
+            <p className="text-sm">
+              Licence en Transmission de Données et Sécurité de
+              l&apos;Information
+            </p>
+            <p className="text-sm text-gray-600">2017 — 2021</p>
+            <h3 className="mt-4 text-lg font-semibold">
+              Université Virtuelle du Sénégal
+            </h3>
+            <p className="text-sm">
+              Première Année en Développement d&apos;Applications Web et Jeux
+              Vidéo
+            </p>
+            <p className="text-sm text-gray-600">2017 — 2018</p>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-blue-600">Intérêts</h2>
+            <p className="text-sm">Lecture, Jeux vidéo, Sports</p>
+          </div>
         </section>
         <aside>
           <div className="mb-8">
@@ -243,34 +259,11 @@ export default function ResumeFr() {
           </div>
 
           <div className="mb-8">
-            <h2 className="mb-4 text-2xl font-bold text-blue-600">Éducation</h2>
-            <h3 className="text-lg font-semibold">
-              Université Cheikh Anta Diop
-            </h3>
-            <p className="text-sm">
-              Licence en Transmission de Données et Sécurité de
-              l&apos;Information
-            </p>
-            <p className="text-sm text-gray-600">2017 — 2021</p>
-            <h3 className="mt-4 text-lg font-semibold">
-              Université Virtuelle du Sénégal
-            </h3>
-            <p className="text-sm">
-              Première Année en Développement d&apos;Applications Web et Jeux
-              Vidéo
-            </p>
-            <p className="text-sm text-gray-600">2017 — 2018</p>
-          </div>
-          <div className="mb-8">
             <h2 className="mb-4 text-2xl font-bold text-blue-600">Langues</h2>
             <p className="text-sm">
               Français (Parlé & Écrit), Anglais (Parlé & Écrit), Bambara (Langue
               Maternelle)
             </p>
-          </div>
-          <div className="mb-8">
-            <h2 className="mb-4 text-2xl font-bold text-blue-600">Intérêts</h2>
-            <p className="text-sm">Lecture, Jeux vidéo, Sports</p>
           </div>
         </aside>
       </main>

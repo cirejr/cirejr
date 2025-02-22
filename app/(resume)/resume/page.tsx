@@ -2,12 +2,10 @@ import Link from "next/link";
 
 export default function ResumeFr() {
   return (
-    <div className="mx-auto max-w-5xl p-8 text-sm">
+    <div className="container mx-auto max-w-5xl p-8 text-sm">
       <header className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
         <div className="md:col-span-2">
-          <Link href="/" className="text-6xl font-bold text-blue-600">
-            Ciré Jr Ba
-          </Link>
+          <h1 className="text-6xl font-bold text-blue-600">Ciré Jr Ba</h1>
           <p className="mt-2">
             Experienced IT Consultant and Front-End Developer specializing in
             web and mobile application development
@@ -16,17 +14,9 @@ export default function ResumeFr() {
         <div className="mt-8">
           <p>juniorcireba@gmail.com</p>
           <p>(+221) 77 842 73 00</p>
-          <a target="_blank" href="https://www.github.com/cirejr">
-            github.com/cirejr
-          </a>
-          <br />
-          <a target="_blank" href="https://www.linkedin.com/in/ba-ciré-junior">
-            linkedin.com/in/ba-ciré-junior
-          </a>
-          <br />
-          <a href="https://x.com/cirejr_" target="_blank">
-            x.com/cirejr_
-          </a>
+          <p>github.com/cirejr</p>
+          <p>linkedin.com/in/ba-ciré-junior</p>
+          <p>x.com/cirejr_</p>
         </div>
       </header>
       <main className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -144,6 +134,29 @@ export default function ResumeFr() {
               </li>
             </ul>
           </div>
+
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-blue-600">Education</h2>
+            <h3 className="text-lg font-semibold">
+              Cheikh Anta Diop University
+            </h3>
+            <p className="text-sm">
+              Bachelor&apos;s Degree in Data Transmission and Information
+              Security
+            </p>
+            <p className="text-sm text-gray-600">2017 — 2021</p>
+            <h3 className="mt-4 text-lg font-semibold">
+              Senegal Virtual University
+            </h3>
+            <p className="text-sm">
+              First Year in Web Gaming Application Development
+            </p>
+            <p className="text-sm text-gray-600">2017 — 2018</p>
+          </div>
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-blue-600">Interests</h2>
+            <p className="text-sm">Reading, Video games, Sports</p>
+          </div>
         </section>
         <aside>
           <div className="mb-8">
@@ -215,35 +228,12 @@ export default function ResumeFr() {
               .
             </p>
           </div>
-
-          <div className="mb-8">
-            <h2 className="mb-4 text-2xl font-bold text-blue-600">Education</h2>
-            <h3 className="text-lg font-semibold">
-              Cheikh Anta Diop University
-            </h3>
-            <p className="text-sm">
-              Bachelor&apos;s Degree in Data Transmission and Information
-              Security
-            </p>
-            <p className="text-sm text-gray-600">2017 — 2021</p>
-            <h3 className="mt-4 text-lg font-semibold">
-              Senegal Virtual University
-            </h3>
-            <p className="text-sm">
-              First Year in Web Gaming Application Development
-            </p>
-            <p className="text-sm text-gray-600">2017 — 2018</p>
-          </div>
           <div className="mb-8">
             <h2 className="mb-4 text-2xl font-bold text-blue-600">Languages</h2>
             <p className="text-sm">
               French (Spoken & Written), English (Spoken & Written), Bambara
               (Native)
             </p>
-          </div>
-          <div className="mb-8">
-            <h2 className="mb-4 text-2xl font-bold text-blue-600">Interests</h2>
-            <p className="text-sm">Reading, Video games, Sports</p>
           </div>
         </aside>
       </main>
