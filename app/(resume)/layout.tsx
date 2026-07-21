@@ -14,7 +14,7 @@ export default function ResumeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className={cn("font-geist-sans container", GeistSans.className, cormorantFont.className)}>
+    <section className={cn("font-geist-sans container", GeistSans.className, cormorantFont.variable)}>
       {children}
     </section>
   );

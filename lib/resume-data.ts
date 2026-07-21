@@ -57,7 +57,7 @@ export const resumeEN: ResumeData = {
   contact: {
     email: "juniorcireba@gmail.com",
     phone: "(+221) 77 842 73 00",
-    linkedin: "linkedin.com/in/ba-cire-junior",
+    linkedin: "linkedin.com/in/cirejr",
     github: "github.com/cirejr",
   },
 
@@ -239,7 +239,7 @@ export const resumeFR: ResumeData = {
   contact: {
     email: "juniorcireba@gmail.com",
     phone: "(+221) 77 842 73 00",
-    linkedin: "linkedin.com/in/ba-cire-junior",
+    linkedin: "linkedin.com/in/cirejr",
     github: "github.com/cirejr",
   },
 

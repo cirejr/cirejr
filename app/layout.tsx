@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-import { Cormorant} from "next/font/google"
+import { Cormorant, Instrument_Serif } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import SideMenu from "@/components/global/side-menu";
@@ -16,6 +16,12 @@ const cormorantFont = Cormorant({
   variable: '--font-cormorant'
 })
 
+const instrumentFont = Instrument_Serif({
+  subsets: ['latin'],
+  variable: '--font-instrument-serif',
+  weight: "400"
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn("font-geist-sans", GeistSans.className, cormorantFont.className)}>
+      <body className={cn("font-geist-sans", GeistSans.className, instrumentFont.variable)}>
         {children}
       </body>
     </html>

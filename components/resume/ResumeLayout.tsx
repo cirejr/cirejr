@@ -8,11 +8,11 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
   return (
     <div className="mx-auto max-w-[800px] px-8 py-10 text-[13px] leading-relaxed text-neutral-900">
       <header className="mb-6">
-        <h1 className="text-[26px] font-bold tracking-tight">{data.name}</h1>
+        <h1 className="text-[26px] font-bold tracking-tight font-serif">{data.name}</h1>
         <p className="mt-1 text-[15px] font-medium text-neutral-700">
           {data.title}
         </p>
-        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-neutral-600">
+        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-neutral-600 font-mono">
           <span>{data.contact.email}</span>
           <span>{data.contact.phone}</span>
           <span>{data.contact.linkedin}</span>
@@ -21,7 +21,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </header>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide font-serif italic">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] uppercase text-xl font-semibold font-serif">
           Professional Summary
         </h2>
         <p className="text-[13px] leading-relaxed text-neutral-800">
@@ -30,13 +30,13 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </section>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] text-xl font-semibold font-serif uppercase">
           Work Experience
         </h2>
         {data.experience.map((job, i) => (
           <div key={i} className="mb-4 last:mb-0">
             <div className="flex items-baseline justify-between">
-              <h3 className="text-[14px] font-semibold">
+              <h3 className="text-[14px] font-semibold font-mono">
                 {job.role} · {job.company}
               </h3>
               <span className="whitespace-nowrap text-[12px] text-neutral-500">
@@ -74,7 +74,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </section>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] text-xl font-semibold font-serif uppercase ">
           Projects
         </h2>
         <div className="space-y-3">
@@ -100,7 +100,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </section>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] text-xl font-semibold font-serif uppercase">
           Technical Skills
         </h2>
         <div className="space-y-1 text-[13px]">
@@ -120,7 +120,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </section>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] text-xl font-semibold font-serif uppercase">
           Education
         </h2>
         {data.education.map((edu, i) => (
@@ -140,7 +140,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </section>
 
       <section>
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] text-xl font-semibold font-serif uppercase">
           Languages
         </h2>
         <p className="text-[13px]">{data.languages.join(" · ")}</p>
