@@ -4,18 +4,12 @@ export default function About() {
   return (
     <section id='about' className='text-foreground'>
       <p>
-        I am a passionate and innovative front-end developer based in Senegal,
-        specializing in creating stunning user interfaces and seamless user
-        experiences. With a strong foundation in Next.js and TypeScript, I
-        thrive on solving complex problems and transforming ideas into reality.
-        My journey in web development has been enriched by my work on an online
-        learning platform and an enterprise-level management application, where
-        I tackled diverse challenges like authentication flows, course
-        management, and intricate data handling. I&apos;m constantly exploring
-        new technologies and am currently delving into finance tracking app
-        development. As I step into the role of a sales agent, I&apos;m eager to
-        connect with clients and bring their visions to life through my
-        technical expertise and creative solutions.
+        I am a frontend engineer based in Senegal, specializing in React,
+        TypeScript, and Next.js. I build responsive web applications with a
+        focus on authentication flows, API integration, and payment systems.
+        My work spans e-learning platforms, enterprise SaaS dashboards, and
+        e-commerce applications. I thrive on solving complex problems and
+        transforming ideas into production-ready products.
       </p>
     </section>
   );
