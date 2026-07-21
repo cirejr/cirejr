@@ -21,7 +21,7 @@ export default function ResumeLayout({ data }: ResumeLayoutProps) {
       </header>
 
       <section className="mb-5">
-        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide">
+        <h2 className="mb-2 border-b border-neutral-300 pb-1 text-[14px] font-bold uppercase tracking-wide font-serif italic">
           Professional Summary
         </h2>
         <p className="text-[13px] leading-relaxed text-neutral-800">
