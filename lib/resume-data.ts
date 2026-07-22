@@ -14,6 +14,17 @@ export interface ResumeExperience {
   role: string;
   company: string;
   period: string;
+
+  employmentType?:
+    | "Full-time"
+    | "Part-time"
+    | "Contract"
+    | "Freelance";
+
+  current?: boolean;
+
+  location?: string;
+
   projects?: ResumeExperienceProject[];
   bullets?: string[];
 }
@@ -63,35 +74,12 @@ export const resumeEN: ResumeData = {
 
   experience: [
     {
-      role: "Frontend Developer (Next.js / TypeScript)",
-      company: "DevPhantom",
-      period: "Oct 2023 — Aug 2024",
-      projects: [
-        {
-          name: "Medical E-Learning Platform",
-          bullets: [
-            "Developed production features for an e-learning platform serving medical students using Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Next-UI",
-            "Implemented authentication flows with OAuth, teacher profiles, course management workflows, and student interactions",
-            "Built social features including posts, comments, likes, and Q&A functionality",
-            "Integrated Stripe payments for course purchases and automated Google Meet link generation for online classes",
-          ],
-        },
-        {
-          name: "Enterprise Management Application",
-          bullets: [
-            "Developed modules for an enterprise management platform including user management, workflows, and business operations",
-            "Implemented role-based access control, complex forms, data tables, and administration interfaces",
-            "Built order management, service/product management, invoicing workflows, and PDF generation features",
-            "Worked with modern React patterns and server-side data handling approaches",
-          ],
-        },
-      ],
-    },
-
-    {
       role: "Technical Client Support & Partnerships Manager",
       company: "Insoft SAS",
       period: "Nov 2022 — Present",
+      employmentType: "Full-time",
+      current: true,
+      location: "Dakar, Senegal",
       bullets: [
         "Manage technical client support operations for digital platforms, including issue investigation and operational troubleshooting",
         "Monitor platform activity, transactions, and service reliability while coordinating issue resolution",
@@ -101,53 +89,102 @@ export const resumeEN: ResumeData = {
     },
 
     {
-      role: "Frontend Developer (Angular)",
-      company: "TechLabs",
-      period: "May 2022 — Jun 2023",
-      projects: [
-        {
-          name: "Rental Platform",
-          bullets: [
-            "Developed frontend interfaces for an Airbnb-style rental platform using Angular, Bootstrap, and PrimeNG",
-            "Built reusable components and responsive user interfaces for customer workflows",
-          ],
-        },
-        {
-          name: "Freelancing Platform",
-          bullets: [
-            "Contributed to frontend development of a freelancing marketplace application",
-            "Implemented UI components and application screens using Angular and Bootstrap",
-          ],
-        },
+      role: "University Lecturer (Part-Time)",
+      company: "Cheikh Anta Diop University (UCAD)",
+      period: "2026 — Present",
+      employmentType: "Part-time",
+      current: true,
+      location: "Dakar, Senegal",
+      bullets: [
+        "Teach undergraduate courses in Information Systems, Web Development, and Introduction to Network Engineering",
+        "Prepare lecture materials, laboratory exercises, assignments, and examinations aligned with the academic curriculum",
+        "Deliver practical and theoretical sessions covering software engineering, modern web technologies, networking fundamentals, TCP/IP, HTTP, DNS, routing, and the OSI model",
+        "Mentor students through hands-on projects and evaluate technical coursework",
       ],
     },
 
     {
-      role: "Frontend Developer (Freelance)",
-      company: "Freelance",
+      role: "Software Engineer (Freelance)",
+      company: "Independent",
       period: "Jan 2021 — Present",
+      employmentType: "Freelance",
+      current: true,
+      location: "Remote",
       projects: [
         {
           name: "MTS Business Applications",
           bullets: [
-            "Developed internal business applications for MTS including workflow management and operational tools",
-            "Built a transit invoicing application for managing billing processes, invoice workflows, and business operations",
-            "Developed a GED/ERP application for document management and enterprise resource workflows",
-            "Implemented dashboards, forms, data management interfaces, and business logic-driven workflows",
+            "Developed internal business applications supporting operational workflows and business processes",
+            "Built a transit invoicing application for managing billing, invoice generation, and transport operations",
+            "Developed a GED/ERP platform for document management and enterprise resource workflows",
+            "Implemented dashboards, business forms, reporting interfaces, and workflow-driven features",
           ],
         },
         {
           name: "Telegram Marketplace",
           bullets: [
-            "Built a marketplace application integrating Telegram Bot API with React, Node.js, MySQL, and Material UI",
-            "Developed frontend interfaces and backend services supporting marketplace workflows",
+            "Built a marketplace platform integrating Telegram Bot API with React, Node.js, MySQL, and Material UI",
+            "Developed frontend interfaces and backend services supporting marketplace operations",
           ],
         },
         {
           name: "Client Websites",
           bullets: [
             "Developed WordPress websites and landing pages for businesses, associations, and organizations",
-            "Delivered custom digital solutions based on client requirements",
+            "Delivered tailored web solutions based on client requirements",
+          ],
+        },
+      ],
+    },
+
+    {
+      role: "Frontend Developer (Next.js / TypeScript)",
+      company: "DevPhantom",
+      period: "Oct 2023 — Aug 2024",
+      employmentType: "Contract",
+      current: false,
+      location: "Remote",
+      projects: [
+        {
+          name: "PrimumSapiens",
+          bullets: [
+            "Developed production features for an e-learning platform serving medical students using Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Next-UI",
+            "Implemented OAuth authentication, teacher profile management, course creation, and student interactions",
+            "Built social features including posts, comments, likes, and Q&A functionality",
+            "Integrated Stripe payments and automated Google Meet link generation for online classes",
+          ],
+        },
+        {
+          name: "GEXP",
+          bullets: [
+            "Developed enterprise application modules covering user management, business workflows, and administration",
+            "Implemented role-based access control, complex forms, data tables, invoicing, and PDF generation",
+            "Collaborated on scalable React architecture and modern server-side data handling patterns",
+          ],
+        },
+      ],
+    },
+
+    {
+      role: "Frontend Developer (Angular)",
+      company: "TechLabs",
+      period: "May 2022 — Jun 2023",
+      employmentType: "Contract",
+      current: false,
+      location: "Remote",
+      projects: [
+        {
+          name: "Rental Platform",
+          bullets: [
+            "Developed frontend interfaces for an Airbnb-style rental platform using Angular, Bootstrap, and PrimeNG",
+            "Built reusable UI components and responsive customer-facing experiences",
+          ],
+        },
+        {
+          name: "Royal Labor",
+          bullets: [
+            "Contributed to frontend development of a freelancing marketplace",
+            "Implemented reusable UI components and application screens using Angular and Bootstrap",
           ],
         },
       ],
@@ -157,9 +194,12 @@ export const resumeEN: ResumeData = {
       role: "Junior Developer",
       company: "Digital & Telecom Services",
       period: "Jul 2021 — Sep 2021",
+      employmentType: "Full-time",
+      current: false,
+      location: "Dakar, Senegal",
       bullets: [
         "Developed e-commerce solutions using WordPress and PrestaShop",
-        "Built a QR-code attendance tracking mobile application using React Native and Expo",
+        "Built a QR-code attendance tracking mobile application using React Native (Expo)",
         "Implemented frontend interfaces for a stock management application using HTML and CSS",
       ],
     },
@@ -168,6 +208,9 @@ export const resumeEN: ResumeData = {
       role: "WordPress Developer",
       company: "GOMTUHG",
       period: "Dec 2020 — Jul 2021",
+      employmentType: "Full-time",
+      current: false,
+      location: "Dakar, Senegal",
       bullets: [
         "Developed and maintained WordPress websites for business clients",
         "Created an online domain name and hosting sales platform",
@@ -223,11 +266,7 @@ export const resumeEN: ResumeData = {
     },
   ],
 
-  languages: [
-    "French — Fluent",
-    "English — Fluent",
-    "Bambara — Native",
-  ],
+  languages: ["French — Fluent", "English — Fluent", "Bambara — Native"],
 };
 
 export const resumeFR: ResumeData = {
@@ -248,6 +287,9 @@ export const resumeFR: ResumeData = {
       role: "Développeur Frontend (Next.js / TypeScript)",
       company: "DevPhantom",
       period: "Oct 2023 — Août 2024",
+      employmentType: "Contract",
+      current: false,
+      location: "Remote",
       projects: [
         {
           name: "Plateforme E-Learning Médicale",
@@ -274,6 +316,9 @@ export const resumeFR: ResumeData = {
       role: "Responsable Support Technique & Partenariats",
       company: "Insoft SAS",
       period: "Nov 2022 — Présent",
+      employmentType: "Full-time",
+      current: true,
+      location: "Dakar, Sénégal",
       bullets: [
         "Gestion du support technique client pour des plateformes digitales, incluant l'analyse d'incidents et la résolution de problèmes opérationnels",
         "Suivi des activités plateformes, transactions et disponibilité des services en collaboration avec les équipes techniques",
@@ -286,6 +331,9 @@ export const resumeFR: ResumeData = {
       role: "Développeur Frontend (Angular)",
       company: "TechLabs",
       period: "Mai 2022 — Juin 2023",
+      employmentType: "Contract",
+      current: false,
+      location: "Remote",
       projects: [
         {
           name: "Plateforme de Location",
@@ -308,6 +356,9 @@ export const resumeFR: ResumeData = {
       role: "Développeur Full-Stack Freelance",
       company: "Freelance",
       period: "Jan 2021 — Présent",
+      employmentType: "Freelance",
+      current: true,
+      location: "Distanciel",
       projects: [
         {
           name: "Applications Métiers MTS",
@@ -339,6 +390,9 @@ export const resumeFR: ResumeData = {
       role: "Développeur Junior",
       company: "Digital & Telecom Services",
       period: "Juil 2021 — Sept 2021",
+      employmentType: "Full-time",
+      current: false,
+      location: "Dakar, Sénégal",
       bullets: [
         "Développement de solutions e-commerce avec WordPress et PrestaShop",
         "Création d'une application mobile de suivi de présence par QR-code avec React Native et Expo",
@@ -350,6 +404,9 @@ export const resumeFR: ResumeData = {
       role: "Développeur WordPress",
       company: "GOMTUHG",
       period: "Déc 2020 — Juil 2021",
+      employmentType: "Full-time",
+      current: false,
+      location: "Dakar, Sénégal",
       bullets: [
         "Développement et maintenance de sites WordPress pour différents clients professionnels",
         "Création d'une plateforme de vente de noms de domaine et d'hébergement",

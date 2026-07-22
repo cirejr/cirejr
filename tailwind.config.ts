@@ -22,7 +22,8 @@ const config = {
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],
-        serif: ["var(--font-instrument-serif)"]
+        serif: ["var(--font-instrument-serif)"],
+        fancy: ["var(--font-lavish)"],
       },
       colors: {
         border: "hsl(var(--border))",
